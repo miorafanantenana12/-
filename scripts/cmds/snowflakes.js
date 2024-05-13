@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "snoflake",
+    name: "snowflakes",
     author: "cliff",//api by hazey
     version: "1.0.0",
     countDown: 5,
@@ -18,7 +18,7 @@ module.exports = {
         return api.sendMessage("Please provide a prompt for Snoflake.", event.threadID);
       }
 
-      const searchMessage = await api.sendMessage(`🔍 ❤️😘Bruno❤️😘 répondra à votre question, mais veuillez patienter....`, event.threadID);
+      const searchMessage = await api.sendMessage(`🔍 ᏰᏒᏬᏁᎾ répondra à votre question, mais veuillez patienter....`, event.threadID);
 
       const prompt = encodeURIComponent(args.join(" "));
       const apiUrl = `https://hashier-api-snowflake.vercel.app/api/snowflake?ask=${prompt}`;
@@ -40,3 +40,4 @@ module.exports = {
     }
   }
 };
+
