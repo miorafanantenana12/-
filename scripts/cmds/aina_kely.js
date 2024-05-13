@@ -28,7 +28,7 @@ async function claude(api, event, args, message) {
 
 async function getClaudeResponse(prompt) {
   try {
-    const url = `https://claude-ai.vercel.app/kshitiz?prompt=${encodeURIComponent(prompt)}`;
+    const url = `https://haze-ultra-advanced-d80346bab842.herokuapp.com/bard?question=${encodeURIComponent(prompt)}`;
     const response = await axios.get(url);
     return response.data;
   } catch (error) {
