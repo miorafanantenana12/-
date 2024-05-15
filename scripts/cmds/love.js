@@ -1,16 +1,16 @@
 const axios = require('axios');
 
 const GPT_API_URL = 'https://sandipapi.onrender.com/gpt';
-const PREFIXES = ['ai'];
+const PREFIXES = ['love'];
 const horizontalLine = "━━━━━━━━━━━━━━━";
 
 module.exports = {
   config: {
-    name: "ai",
+    name: "love",
     version: 1.0,
     author: "OtinXSandip",
-    longDescription: "AI",
-    category: "ai",
+    longDescription: "LOVE",
+    category: "love",
     guide: {
       en: "{p} questions",
     },
