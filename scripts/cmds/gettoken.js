@@ -4,7 +4,7 @@ module.exports = {
 	config: {
 	name: "gettoken",
 	version: "1.0.1",
-	role: 0,
+	role: 1,
 	author: "Kaizenji",
 	shortDescription: {
 			en: "( 𝙂𝙚𝙩 𝙏𝙤𝙠𝙚𝙣 )"
