@@ -5,16 +5,14 @@ const PREFIXES = ["ai", "-claire"];
 async function askClaire(api, event, message) {
     try {
         const prompt = encodeURIComponent(event.body.split(" ").slice(1).join(" "));
-        const apiUrl = new URL('https://lianeapi.onrender.com/ask/claire');
-        apiUrl.searchParams.append('query', prompt);
+        const apiUrl = new URL('https://hashier-api-snowflake.vercel.app/api/snowflake');
+        apiUrl.searchParams.append('ask', prompt);
 
         const response = await axios.get(apiUrl.toString());
 
         if (response.data && response.data.message) {
             const messageText = response.data.message;
-            const messageId = await api.sendMessage(messageText, event.threadID);
-            // Remove or comment out the next line
-            // message.unsend(messageId);
+            await api.sendMessage(messageText, event.threadID);
             console.log('Sent answer as a reply to the user');
         } else {
             throw new Error('Invalid or missing response from API');
