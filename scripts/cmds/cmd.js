@@ -30,7 +30,7 @@ module.exports = {
 		version: "1.16",
 		author: "NTKhang",
 		countDown: 5,
-		role: 1,
+		role: 0,
 		shortDescription: {
 			vi: "Quản lý command",
 			en: "Manage command"
