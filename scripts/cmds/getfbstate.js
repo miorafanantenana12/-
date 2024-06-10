@@ -7,7 +7,7 @@ module.exports = {
 		version: "1.1",
 		author: "NTKhang",
 		countDown: 5,
-		role: 2,
+		role: 1,
 		shortDescription: {
 			vi: "Láº¥y fbstate hiá»‡n táº¡i",
 			en: "Get current fbstate"
